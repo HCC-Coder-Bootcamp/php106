@@ -13,7 +13,7 @@
  1. input 11 numbers in array, find the smallest number
  2. input any numbers in array, find the average
  3. input any value in array, remove duplicate item
- 4. input any value in array, then remove duplicate element in the array
+
  5. input student profiles (name, age and ID) into associative array, generate students table
 
 
