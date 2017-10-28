@@ -1,21 +1,33 @@
 <?php 
 
-	$profile = [];
-
+	$profiles = [];
 	do {
-		$input = readline( "Student profile?" . PHP_EOL);
-
-		if ( $input !== 'x') {
-			$inputName = readline( "Name: " . PHP_EOL);
+		echo "Student Profiles? (x to quit) " . PHP_EOL;
+		$inputName = readline( "Name: " . PHP_EOL);
+		if ( $inputName !== 'x') {
 			$inputAge = readline( "Age: " . PHP_EOL);
 			$inputId = readline( "ID: " . PHP_EOL);
-			$profile[] = $inputName . PHP_EOL . 
-						 $inputAge . PHP_EOL .
-						 $inputId . PHP_EOL;
+			$profile = [];
+			$profile['name'] = $inputName;
+			$profile['age'] = $inputAge;
+			$profile['id'] = $inputId;
+			$profiles[] = $profile;
+			print_r($profiles);
 		}
-	} while ( $input !== 'x' );
+	} while ( $inputName !== 'x' );
 
-	foreach ($profile as $index => $details) {
-		echo PHP_EOL . "Student Profile $index" . PHP_EOL;
-		echo $profile[$index];
+	echo "Name \t |" . "Age \t |" . "ID \t |" . PHP_EOL;
+	foreach ($profiles as $index => $profile) {
+		echo $profile['id'];
+		echo "\t | ";
+		echo $profile['name'];
+		echo "\t | ";
+		echo $profile['age'];
+		echo "\t | ";
+		// foreach ($profile as $key => $value) {
+		// 	echo "\t |  $value " ;
+		// }
+		echo PHP_EOL;
+		// echo PHP_EOL . "Student Profiles $index" . PHP_EOL;
+		// echo $profiles[$index];
 	}
