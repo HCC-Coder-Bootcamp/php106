@@ -22,9 +22,9 @@ do {
 } while($input_name !== 'x');
 
 echo  PHP_EOL . "++++++++++++++++++++++++++++++++++" . PHP_EOL . PHP_EOL;
-echo ' Name ' . "\t |" . ' Age' . PHP_EOL;
+echo ' Name ' . "\t\t\t |" . ' Age' . PHP_EOL;
 foreach ($array_of_ages as $name => $age) {
-    echo " $name \t | $age" . PHP_EOL;
+    echo " $name \t\t\t | $age" . PHP_EOL;
 }
 
 
