@@ -24,7 +24,7 @@ do {
 print_r($students);
 
 
-echo "Name          |Age          |ID          " . PHP_EOL;
+echo str_pad(Nmae, pad_length)"Name          |Age          |ID          " . PHP_EOL;
 
 foreach ($students as $key => $student) {
 
